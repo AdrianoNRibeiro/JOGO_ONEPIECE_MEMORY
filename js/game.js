@@ -9,7 +9,7 @@ const characters = [
     'Jinbe',
     'Luffy',
     'Nami',
-    'Robin',
+    'Nico_Robin',
     'Sanji',
     'Usopp',
     'Zoro',
