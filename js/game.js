@@ -1,6 +1,7 @@
 const grid = document.querySelector('.grid');
 const spanPlayer = document.querySelector('.player');
 const timer = document.querySelector('.timer');
+const btn_restart = document.querySelector('.btn_restart');
 
 const characters = [
     'Brook',
@@ -14,6 +15,10 @@ const characters = [
     'Usopp',
     'Zoro',
 ];
+
+btn_restart.addEventListener('click',(event)=>{
+    window.location.reload();
+})
 
 const createElement=(tag,className)=>{
     const element = document.createElement(tag);
