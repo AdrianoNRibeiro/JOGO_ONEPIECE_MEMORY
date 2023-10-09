@@ -11,6 +11,23 @@
     .card {
         aspect-ratio: 3/6 !important;
     }
+
+    .button-reset {
+        right: 31% !important;
+        top: 84.5% !important;
+        width: 160px !important;
+        height: 90px !important;
+        border-radius: 20px !important;
+    }  
+
+    .aside {
+        left: 45% !important;
+        top: 80% !important;
+        width: 60px;
+        text-align: center;
+        line-height: 1 !important;
+        font-size: 0.6em !important;
+    }
 }
 
 body {
