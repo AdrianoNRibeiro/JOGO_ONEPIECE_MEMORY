@@ -11,21 +11,30 @@
 
     <title>Piece Memory</title>
 </head>
-<body>
-    
+<body>      
     <main>
+        <div class="container-menu">
+            <nav>
+                <button id="btn_restartGame">Reiniciar</button>
+                <button>Pokémon</button>
+                <button>Dragon Ball</button>
+                <button>Demon Slayer</button>
+                <button>Records</button>
+            </nav>
+        </div>
         <header>
             <span class="player"></span>
             <span>Tempo: <span class="timer">00</span></span>
         </header>
-    
         <div class="grid"></div>
-
         <div class="aside">Create by <br><span><i>Adriano Neves</i></span></div>
-        <div class="button-reset">
-            <button class="btn_restart">Reiniciar</button>
-        </div>
-    </main>    
+    </main>
 
+    <script>
+        btn_restartGame.addEventListener('click',(evt)=>{
+            window.location.reload();
+        })
+    </script>
+    
 </body>
 </html>
