@@ -1,11 +1,11 @@
-@media screen and (max-width: 478px) {
+@media screen and (max-width: 700px) {
     header {
-        transform: translateY(-50px);
-        font-size: 1em;
+        transform: translateY(-50px) !important;
+        font-size: 1em !important;
     }
 
-    .grid {
-        transform: translateY(-40px);
+    main {
+        justify-content: center !important;
     }
 
     .card {
@@ -21,13 +21,43 @@
     }  
 
     .aside {
-        left: 45% !important;
-        top: 80% !important;
+        left: 50% !important;
+        top: 90% !important;
         width: 60px;
         text-align: center;
         line-height: 1 !important;
-        font-size: 0.6em !important;
+        font-size: 0.8em !important;
     }
+
+    .container-menu {
+        display: none !important;
+    }
+
+    .grid {
+        grid-template-columns: repeat(6, 1fr) !important;
+        transform: translateX(-16px) !important;
+    }
+
+    header {
+        transform: translateX(-15px) !important;
+        width: 530px !important;
+    }
+
+    .menu-responsible {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid bisque;
+        position: absolute;
+        top: 3px;
+        left: 6px;
+        width: 80px;
+        height: 75px;
+        background-image: url('../img/menu.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 8px;
+    } 
 }
 
 body {
