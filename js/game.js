@@ -2,6 +2,8 @@ const grid = document.querySelector('.grid');
 const spanPlayer = document.querySelector('.player');
 const timer = document.querySelector('.timer');
 const btn_restartGame = document.querySelector('.btn_restartGame');
+const characterDisplay = document.querySelector('#characterDisplay');
+const characterName = document.querySelector('#characterName');
 
 const characters = [
     'Brook',
@@ -14,6 +16,8 @@ const characters = [
     'Sanji',
     'Usopp',
     'Zoro',
+    'Garp',
+    'Hawk',
 ];
 
 const createElement=(tag,className)=>{
@@ -28,7 +32,7 @@ let secondCard = "";
 const checkEndGame=()=>{
     const disableCards = document.querySelectorAll('.disable-card');
 
-    if(disableCards.length == 20){
+    if(disableCards.length == 24){
         clearInterval(this.loop);
         alert(`Parabéns, ${spanPlayer.innerHTML}! Seu tempo foi: ${timer.innerHTML} segundos!`);        
     }
@@ -41,6 +45,9 @@ const checkCards=()=>{
     if(firstCharacter == secondCharacter){
         firstCard.firstChild.classList.add('disable-card');
         secondCard.firstChild.classList.add('disable-card');
+
+        characterDisplay.setAttribute('src',`../img/${firstCharacter}.jpg`);
+        characterName.innerHTML = firstCharacter;
 
         firstCard = "";
         secondCard = "";
