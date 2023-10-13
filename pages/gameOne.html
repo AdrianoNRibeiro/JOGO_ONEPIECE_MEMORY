@@ -6,8 +6,10 @@
 
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/game.css">
+    <link rel="stylesheet" href="../css/menu.css">
 
     <script defer src="../js/game.js"></script>
+    <!-- <script defer src="../js/gameAll.js"></script> -->
 
     <title>Piece Memory</title>
 </head>
@@ -16,11 +18,11 @@
         <div class="menu-responsible"></div>
         <div class="container-menu">
             <nav>
-                <button id="btn_restartGame">Reiniciar</button>
-                <button id="btn_gamePoke">Pokémon</button>
-                <button>Dragon Ball</button>
-                <button>Demon Slayer</button>
-                <button>Records</button>               
+                <a href="../pages/gameOne.html" id="btn_gamePiece">One Piece</a>
+                <a href="../pages/gamePoke.html" id="btn_gamePoke">Pokémon</a>
+                <a href="../pages/gameDragon.html" id="btn_gameDragon">Dragon Ball</a>
+                <a href="../pages/gameDemon.html" id="btn_gameDemon">Demon Slayer</a>
+                <a href="#" id="btn_records">Records</a>               
             </nav>
             <div class="character-ready">
                 <img src="#" alt="" id="characterDisplay">
@@ -34,12 +36,6 @@
         <div class="grid"></div>
         <div class="aside">Create by <br><span><i>Adriano Neves</i></span></div>
     </main>
-
-    <script>
-        btn_restartGame.addEventListener('click',(evt)=>{
-            window.location.reload();
-        })
-    </script>
     
 </body>
 </html>
