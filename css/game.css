@@ -1,9 +1,4 @@
 @media screen and (max-width: 700px) {
-    header {
-        transform: translateY(-50px) !important;
-        font-size: 1em !important;
-    }
-
     main {
         justify-content: center !important;
     }
@@ -23,11 +18,11 @@
 
     .grid {
         grid-template-columns: repeat(6, 1fr) !important;
-        transform: translateX(-16px) !important;
+        transform: translateX(16px) !important;
     }
 
     header {
-        transform: translateX(-15px) !important;
+        transform: translateX(16px) !important;
         width: 530px !important;
     }
 }
@@ -55,8 +50,8 @@ header {
     justify-content: space-between;
     background-color: rgba(255,255,255,0.8);
     width: 100%;
-    max-width: 1300px;
-    height: 35px;
+    max-width: 80%;
+    height: 8%;
     padding: 30px;
     margin: 0 0 8px;
     border-radius: 5px;
@@ -67,10 +62,12 @@ header {
 .grid {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    gap: 15px;
+    gap: 1%;
     width: 100%;
-    max-width: 1300px;
+    height: 80%;
+    max-width: 80%;
     transform: translateX(8%);
+
 }
 
 .card {

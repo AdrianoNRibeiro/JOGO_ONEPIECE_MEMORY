@@ -1,4 +1,4 @@
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1800px) {
     .container-menu {
         display: none !important;
     }
@@ -15,18 +15,40 @@
         height: 75px;
         background-image: url('../img/menu.svg');
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
         border-radius: 8px;
     } 
+}
+
+@media screen and (max-width: 1000px) {
+    .menu-responsible {
+        width: 48px!important;
+        height: 48px !important;
+        cursor: pointer !important;
+        z-index: 9999999999;
+    }
+
+    .container-menu {
+        left: -1% !important;
+        z-index: 9999999;
+    }
+
+    .character-ready {
+        display: none !important;
+    }
+}
+
+.displayFlex {
+    display: flex !important;
 }
 
 .container-menu {
     display: flex;
     flex-direction: column;
     position: absolute;
-    left: 3%;
+    left: 1%;
     top: 0%;
-    height: 800px;
+    height: 80%;
 }
 
 .container-menu nav {
@@ -35,6 +57,8 @@
     justify-content: center;
     align-items: center;
     padding: 8px;
+    width: 100%;
+    height: 100vh;
 }
 
 .container-menu nav a {
@@ -45,7 +69,7 @@
     padding: 8px;
     border: 1px solid bisque;
     border-radius: 8px;
-    width: 300px;
+    width: 80%;
     height: 60px;
     background-color: bisque;
     cursor: pointer;
@@ -71,9 +95,9 @@
     justify-content: center;
     border: 1px solid bisque;
     border-radius: 5px;
-    width: 280px;
+    width: 78%;
     height: 300px;
-    transform: translateX(10%);
+    transform: translateX(13%);
     box-shadow: 2px 2px 2px 2px #333;
     background-color: bisque;
 }
