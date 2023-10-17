@@ -95,9 +95,9 @@
     justify-content: center;
     border: 1px solid bisque;
     border-radius: 5px;
-    width: 78%;
-    height: 300px;
-    transform: translateX(13%);
+    width: 76%;
+    height: 80%;
+    transform: translateX(17%) !important;
     box-shadow: 2px 2px 2px 2px #333;
     background-color: bisque;
 }

@@ -46,7 +46,7 @@ const checkCards=()=>{
         firstCard.firstChild.classList.add('disable-card');
         secondCard.firstChild.classList.add('disable-card');
 
-        characterDisplay.setAttribute('src',`../img/${firstCharacter}.jpg`);
+        characterDisplay.setAttribute('src',`../img/imgOne/${firstCharacter}.jpg`);
         characterName.innerHTML = firstCharacter;
 
         firstCard = "";
@@ -85,7 +85,7 @@ const createCard=(character)=>{
     const front = createElement('div', 'face front');
     const back = createElement('div', 'face back');
 
-    front.style.backgroundImage = `url('../img/${character}.jpg')`;
+    front.style.backgroundImage = `url('../img/imgOne/${character}.jpg')`;
 
     card.appendChild(front);
     card.appendChild(back);
