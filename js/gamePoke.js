@@ -6,18 +6,18 @@ const characterDisplay = document.querySelector('#characterDisplay');
 const characterName = document.querySelector('#characterName');
 
 const characters = [
-    'Brook',
-    'Chopper',
-    'Franky',
-    'Jinbe',
-    'Luffy',
-    'Nami',
-    'Nico_Robin',
-    'Sanji',
-    'Usopp',
-    'Zoro',
-    'Garp',
-    'Hawk',
+    'Absol',
+    'Alakazam',
+    'Bulbasaur',
+    'Charmander',
+    'Darkrai',
+    'Entei',
+    'Hoopa',
+    'Kyurem',
+    'Mew',
+    'MrRime',
+    'Pikachu',
+    'Zeraora',
 ];
 
 const createElement=(tag,className)=>{
@@ -46,7 +46,7 @@ const checkCards=()=>{
         firstCard.firstChild.classList.add('disable-card');
         secondCard.firstChild.classList.add('disable-card');
 
-        characterDisplay.setAttribute('src',`../img/imgOne/${firstCharacter}.jpg`);
+        characterDisplay.setAttribute('src',`../img/imgPoke/${firstCharacter}.jpg`);
         characterName.innerHTML = firstCharacter;
 
         firstCard = "";
@@ -85,7 +85,7 @@ const createCard=(character)=>{
     const front = createElement('div', 'face front');
     const back = createElement('div', 'face back');
 
-    front.style.backgroundImage = `url('../img/imgOne/${character}.jpg')`;
+    front.style.backgroundImage = `url('../img/imgPoke/${character}.jpg')`;
 
     card.appendChild(front);
     card.appendChild(back);
