@@ -4,12 +4,12 @@
     }
 
     .card {
-        aspect-ratio: 3/6 !important;
+        aspect-ratio: 2/6 !important;
     }
 
     .aside {
         left: 50% !important;
-        top: 90% !important;
+        top: 92% !important;
         width: 60px;
         text-align: center;
         line-height: 1 !important;
@@ -19,13 +19,25 @@
     .grid {
         grid-template-columns: repeat(6, 1fr) !important;
         transform: translateX(16px) !important;
+        gap: 2% !important;
     }
 
     header {
         transform: translateX(16px) !important;
         width: 530px !important;
+        height: 30px !important;
+        font-size: 0.8em !important;
     }
 }
+
+@media  screen and (max-height: 610px) {
+    .aside {
+        font-size: 0.5em;
+        transform: rotateY(90deg)!important;
+    }
+
+}
+
 
 body {
     overflow: hidden;
@@ -99,7 +111,7 @@ header {
 }
 
 .back {
-    background-image: url('../img/imgPoke/Poke-Fundo.jpg');
+    background-image: url('../img/imgOne/One_Piece.jpg');
     backface-visibility: hidden;
 }
 
