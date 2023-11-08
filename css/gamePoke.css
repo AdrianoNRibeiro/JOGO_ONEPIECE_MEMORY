@@ -48,7 +48,7 @@ main {
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-image: url('../img/imgOne/going2.png');
+    background-image: url('../img/imgPoke/PokemonFundo.jpg');
     background-size: 100% 100%;
     min-height: 100vh;
     align-items: center;

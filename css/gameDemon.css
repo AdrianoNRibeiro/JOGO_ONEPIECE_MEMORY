@@ -48,7 +48,7 @@ main {
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-image: url('../img/imgOne/going2.png');
+    background-image: url('../img/imgDemon/DemonFundo.jpg');
     background-size: 100% 100%;
     min-height: 100vh;
     align-items: center;
@@ -111,7 +111,7 @@ header {
 }
 
 .back {
-    background-image: url('../img/imgOne/One_Piece.jpg');
+    background-image: url('../img/imgDemon/DemonCarta.jpg');
     backface-visibility: hidden;
 }
 
